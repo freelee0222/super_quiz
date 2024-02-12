@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/css/bootstrap.min.css"
+    integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Math & Science Quiz</title>
+</head>
+
+
+<body>
+
+  <header>
+    <h1 id="title">Math & Science Quiz</h1>
+    <h3 id="highScore"></h3><!-- empty div to place high score into -->
+  </header>
+  <hr>
+
+  <!-- rules panel that hides upon clicking the "begin" button -->
+  <div id="rules">
+    <h1>How to Play</h1>
+    <p>When you are ready to play, click the 'Begin' button. Simply click on your choice and the next question will pop
+      up soon after. The faster you answer the more points you could recieve. There is also an option to add your own
+      question below, click the 'Create-a-Question' button below and fill in the spaces provided. Add up to three of
+      your own questions..</p>
+    <hr>
+    <h1 id="leaderBoard"></h1>
+    <div id="firstPlace"></div>
+    <div id="secondPlace"></div>
+    <div id="thirdPlace"></div>
+  </div>
+
+
+  <div>
+    <button id="quiz">Begin</button>
+  </div>
+
+  <!-- Box that displays the score -->
+  <div id="scoreBox" class="box">
+    <h3>Score: <span id="currentScore">0</span></h3>
+  </div>
+  <div id="timer">
+    <h4>100</h4>
+  </div>
+  <!-- empty div to display questions, answer choices and feedback -->
+  <div id="canvas" class="box"></div>
+
+  <!-- form for user to add a custom question to the array of questions to be asked -->
+  <div id="custom">
+    <button id="createQuestion">Create-a-Question</button>
+    <div id="creator">
+      <input id="customQuestion" placeholder="question">
+      <input id="customAnswer" placeholder="answer">
+      <hr>
+      <input id="customChoice1" placeholder="wrong choice 1">
+      <input id="customChoice2" placeholder="wrong choice 2">
+      <input id="customChoice3" placeholder="wrong choice 3">
+      <hr>
+      <button id="create">Add Custom Question</button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"
+    integrity="sha512-M+qMI1PHRcYcOpJzeJlaWbVVx2JJyPIwZas8or7dc97LZOokjvbpfRxymhVtlJLyjiF3wGyr0FJOA4DLONLVLw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"
+    integrity="sha512-TPh2Oxlg1zp+kz3nFA0C5vVC6leG/6mm1z9+mA81MI5eaUVqasPLO8Cuk4gMF4gUfP5etR73rgU/8PNMsSesoQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/js/bootstrap.min.js"
+    integrity="sha512-8qmis31OQi6hIRgvkht0s6mCOittjMa9GMqtK9hes5iEQBQE/Ca6yGE5FsW36vyipGoWQswBj/QBm2JR086Rkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

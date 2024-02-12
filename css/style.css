@@ -1,0 +1,40 @@
+body {
+  font-family: Trebuchet MS;
+  background: radial-gradient(rgb(20, 180, 180), rgb(20, 100, 180)); /* two colors that compliment one another according to the color pallete to satisfy requirements */
+  color: white; /* high contrast text used to satisfy requiremnts */
+  height: 900px;
+  margin: 20px;
+  text-align: center
+}
+
+#title {
+  font-family: Georgia;/* second font family/serif-font to satisfy requirements */
+  font-size: 72px;
+  font-weight: 700;
+}
+
+.box {
+  border: double 18px rgb(20, 140, 180);
+  width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+button {
+  background-color: white;
+  color: rgb(20, 180, 180);
+  height: 75px;
+  width: 135px;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 30px;
+}
+
+button:hover {
+  opacity: 50%;
+}
+
+button:active {
+  color: white;
+  background-color: rgb(20, 120, 180);
+}
